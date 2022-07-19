@@ -1,0 +1,17 @@
+server:
+  port: 9899
+spring:
+  application:
+    name: ConfigServer
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+            search-locations: classpath:/commons/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9900/eureka/

@@ -1,0 +1,10 @@
+server:
+  port: 9900
+eureka:
+  client:
+    service-url:
+      defaltZone: http://localhost:9900/eureka/
+    fetch-registry: false
+    register-with-eureka: false
+  instance:
+    hostname: localhost
